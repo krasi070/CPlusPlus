@@ -1,0 +1,15 @@
+﻿Build started 01.06.2016 г. 22:28:56.
+     1>Project "D:\SoftUni\00.Open Courses\C++\01.Introduction\02.HighestScore\02.HighestScore.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\02.HighestScore.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt 02.HighestScore.cpp
+         02.HighestScore.cpp
+     1>d:\softuni\00.open courses\c++\01.introduction\02.highestscore\02.highestscore.cpp(65): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SoftUni\00.Open Courses\C++\01.Introduction\Debug\02.HighestScore.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\SoftUni\00.Open Courses\C++\01.Introduction\Debug\02.HighestScore.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SoftUni\00.Open Courses\C++\01.Introduction\Debug\02.HighestScore.lib" /MACHINE:X86 Debug\02.HighestScore.obj
+         Debug\stdafx.obj
+         02.HighestScore.vcxproj -> D:\SoftUni\00.Open Courses\C++\01.Introduction\Debug\02.HighestScore.exe
+     1>Done Building Project "D:\SoftUni\00.Open Courses\C++\01.Introduction\02.HighestScore\02.HighestScore.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.92
