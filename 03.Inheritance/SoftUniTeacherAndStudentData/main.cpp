@@ -13,9 +13,10 @@ CurrentCourse getCurrCourse(std::string course, std::string courses[], int numbe
 void addStudent(Student students[], unsigned short studentCount, std::string courses[], int coursesCount);
 void addGuestTeacher(GuestTeacher guestTeachers[], unsigned short guestTeacherCount, std::string courses[], int coursesCount);
 void addTeacher(Teacher teachers[], unsigned short teacherCount, std::string courses[], int coursesCount);
-bool checkIfStudentIdExists(Student students[], unsigned short studentCount, int id);
-bool checkIfTeacherIdExists(Teacher teachers[], unsigned short teacherCount, int id);
-bool checkIfGuestTeacherIdExists(GuestTeacher guestTeachers[], unsigned short guestTeacherCount, int id);
+bool checkIfStudentIdExists(Student students[], unsigned short studentCount, std::string id);
+bool checkIfTeacherIdExists(Teacher teachers[], unsigned short teacherCount, std::string id);
+bool checkIfGuestTeacherIdExists(GuestTeacher guestTeachers[], unsigned short guestTeacherCount, std::string id);
+bool isNumber(std::string str);
 
 // Check CurrentCourse.h for valid courses.
 // Wasn't able to make maximum capacity 65535. I think I can't store that much space.
@@ -102,6 +103,9 @@ int main()
 			addGuestTeacher(guestTeachers, guestTeacherCount, courses, coursesCount);
 			guestTeacherCount++;
 			break;
+		default:
+			continue;
+			break;
 		}
 
 		std::cout << std::endl << "PRESS ANY KEY TO CONTINUE";
@@ -169,14 +173,27 @@ void addStudent(Student students[], unsigned short studentCount, std::string cou
 {
 	std::cout << "Enter ID: ";
 	unsigned short id;
-	std::cin >> id;
-	std::cin.ignore();
-	while (checkIfStudentIdExists(students, studentCount, id))
+	std::string strId;
+	getline(std::cin, strId);
+	bool isIdInUse = checkIfStudentIdExists(students, studentCount, strId);
+	bool isIdNumber = isNumber(strId);
+	while (!isIdNumber || isIdInUse)
 	{
-		std::cout << "ID is in use! Enter ID: ";
-		std::cin >> id;
-		std::cin.ignore();
+		if (!isIdNumber)
+		{
+			std::cout << "Invalid ID! ID must be between 0 and 65535. Enter ID: ";
+		}
+		else
+		{
+			std::cout << "ID is in use! Enter ID: ";
+		}
+		
+		getline(std::cin, strId);
+		isIdInUse = checkIfStudentIdExists(students, studentCount, strId);
+		isIdNumber = isNumber(strId);
 	}
+
+	id = std::stoi(strId);
 
 	std::cout << "Enter name: ";
 	std::string name;
@@ -191,7 +208,7 @@ void addStudent(Student students[], unsigned short studentCount, std::string cou
 		std::cout << "Invalid course name! Enter current course: ";
 		std::string course;
 		getline(std::cin, course);
-		CurrentCourse currCourse = getCurrCourse(course, courses, coursesCount);
+		currCourse = getCurrCourse(course, courses, coursesCount);
 	}
 
 	std::cout << "Enter current points (0 - 100): ";
@@ -223,14 +240,27 @@ void addTeacher(Teacher teachers[], unsigned short teacherCount, std::string cou
 {
 	std::cout << "Enter ID: ";
 	unsigned short id;
-	std::cin >> id;
-	std::cin.ignore();
-	while (checkIfTeacherIdExists(teachers, teacherCount, id))
+	std::string strId;
+	getline(std::cin, strId);
+	bool isIdInUse = checkIfTeacherIdExists(teachers, teacherCount, strId);
+	bool isIdNumber = isNumber(strId);
+	while (!isIdNumber || isIdInUse)
 	{
-		std::cout << "ID is in use! Enter ID: ";
-		std::cin >> id;
-		std::cin.ignore();
+		if (!isIdNumber)
+		{
+			std::cout << "Invalid ID! ID must be between 0 and 65535. Enter ID: ";
+		}
+		else
+		{
+			std::cout << "ID is in use! Enter ID: ";
+		}
+
+		getline(std::cin, strId);
+		isIdInUse = checkIfTeacherIdExists(teachers, teacherCount, strId);
+		isIdNumber = isNumber(strId);
 	}
+
+	id = std::stoi(strId);
 
 	std::cout << "Enter name: ";
 	std::string name;
@@ -244,7 +274,7 @@ void addTeacher(Teacher teachers[], unsigned short teacherCount, std::string cou
 		std::cout << "Enter current course: ";
 		std::string course;
 		getline(std::cin, course);
-		CurrentCourse currCourse = getCurrCourse(course, courses, coursesCount);
+		currCourse = getCurrCourse(course, courses, coursesCount);
 	}
 
 	std::cout << "Enter monthly salary: ";
@@ -263,14 +293,27 @@ void addGuestTeacher(GuestTeacher guestTeachers[], unsigned short guestTeacherCo
 {
 	std::cout << "Enter ID: ";
 	unsigned short id;
-	std::cin >> id;
-	std::cin.ignore();
-	while (checkIfGuestTeacherIdExists(guestTeachers, guestTeacherCount, id))
+	std::string strId;
+	getline(std::cin, strId);
+	bool isIdInUse = checkIfGuestTeacherIdExists(guestTeachers, guestTeacherCount, strId);
+	bool isIdNumber = isNumber(strId);
+	while (!isIdNumber || isIdInUse)
 	{
-		std::cout << "ID is in use! Enter ID: ";
-		std::cin >> id;
-		std::cin.ignore();
+		if (!isIdNumber)
+		{
+			std::cout << "Invalid ID! ID must be between 0 and 65535. Enter ID: ";
+		}
+		else
+		{
+			std::cout << "ID is in use! Enter ID: ";
+		}
+
+		getline(std::cin, strId);
+		isIdInUse = checkIfGuestTeacherIdExists(guestTeachers, guestTeacherCount, strId);
+		isIdNumber = isNumber(strId);
 	}
+
+	id = std::stoi(strId);
 
 	std::cout << "Enter name: ";
 	std::string name;
@@ -284,7 +327,7 @@ void addGuestTeacher(GuestTeacher guestTeachers[], unsigned short guestTeacherCo
 		std::cout << "Enter current course: ";
 		std::string course;
 		getline(std::cin, course);
-		CurrentCourse currCourse = getCurrCourse(course, courses, coursesCount);
+		currCourse = getCurrCourse(course, courses, coursesCount);
 	}
 
 	std::cout << "Enter monthly salary: ";
@@ -308,8 +351,14 @@ CurrentCourse getCurrCourse(std::string course, std::string courses[], int numbe
 	return (CurrentCourse)Invalid;
 }
 
-bool checkIfStudentIdExists(Student students[], unsigned short studentCount, int id)
+bool checkIfStudentIdExists(Student students[], unsigned short studentCount, std::string strId)
 {
+	if (!isNumber(strId))
+	{
+		return true;
+	}
+
+	int id = std::stoi(strId);
 	for (int i = 0; i < studentCount; i++)
 	{
 		if (students[i].id == id)
@@ -321,8 +370,14 @@ bool checkIfStudentIdExists(Student students[], unsigned short studentCount, int
 	return false;
 }
 
-bool checkIfTeacherIdExists(Teacher teachers[], unsigned short teacherCount, int id)
+bool checkIfTeacherIdExists(Teacher teachers[], unsigned short teacherCount, std::string strId)
 {
+	if (!isNumber(strId))
+	{
+		return false;
+	}
+
+	int id = std::stoi(strId);
 	for (int i = 0; i < teacherCount; i++)
 	{
 		if (teachers[i].id == id)
@@ -334,8 +389,14 @@ bool checkIfTeacherIdExists(Teacher teachers[], unsigned short teacherCount, int
 	return false;
 }
 
-bool checkIfGuestTeacherIdExists(GuestTeacher guestTeachers[], unsigned short guestTeacherCount, int id)
+bool checkIfGuestTeacherIdExists(GuestTeacher guestTeachers[], unsigned short guestTeacherCount, std::string strId)
 {
+	if (!isNumber(strId))
+	{
+		return false;
+	}
+
+	int id = std::stoi(strId);
 	for (int i = 0; i < guestTeacherCount; i++)
 	{
 		if (guestTeachers[i].id == id)
@@ -345,4 +406,17 @@ bool checkIfGuestTeacherIdExists(GuestTeacher guestTeachers[], unsigned short gu
 	}
 
 	return false;
+}
+
+bool isNumber(std::string str)
+{
+	for (int i = 0; i < str.length(); i++)
+	{
+		if (str[i] < '0' || str[i] > '9')
+		{
+			return false;
+		}
+	}
+
+	return std::stoi(str) < 65535;
 }
