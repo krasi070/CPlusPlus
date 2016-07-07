@@ -1,24 +1,24 @@
 #include <iostream>
+#include "GameObject.h"
 
 #ifndef __CHARACTER_H
 #define __CHARACTER_H
 
-class Character
+class Character : public GameObject
 {
 public:
 	Character() {}
 	Character(std::string name, float massInKg, float jumpSpeedInKmPerHour, unsigned int id)
+		: GameObject(name, id)
 	{
-		this->name = name;
 		this->massInKg = massInKg;
 		this->jumpSpeedInKmPerHour = jumpSpeedInKmPerHour;
-		this->id = id;
 	}
 
-	std::string name;
+	
 	float massInKg;
 	float jumpSpeedInKmPerHour;
-	unsigned int id;
+	
 };
 
 #endif

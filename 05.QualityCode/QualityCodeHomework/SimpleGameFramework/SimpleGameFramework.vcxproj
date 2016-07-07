@@ -82,6 +82,7 @@
   <ItemGroup>
     <ClInclude Include="Character.h" />
     <ClInclude Include="Environment.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="PhysicsController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
