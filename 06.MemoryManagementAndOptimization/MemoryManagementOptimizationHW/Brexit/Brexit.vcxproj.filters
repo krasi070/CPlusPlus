@@ -24,6 +24,9 @@
     <ClCompile Include="Voter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="VoteCollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vote.h">
@@ -35,10 +38,10 @@
     <ClInclude Include="Voter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VoteCollector.h">
+    <ClInclude Include="Gender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Gender.h">
+    <ClInclude Include="VoteCollector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -13,7 +13,7 @@ private:
 	std::string location;
 	std::string ethnicity;
 public:
-	User();
+	User() {}
 
 	User(int age, std::string name, Gender gender, std::string loc, std::string ethnicity);
 

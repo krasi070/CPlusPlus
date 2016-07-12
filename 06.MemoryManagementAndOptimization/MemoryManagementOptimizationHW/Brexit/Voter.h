@@ -17,6 +17,8 @@ public:
 	Voter();
 
 	Voter(int age, std::string name, Gender gender, std::string loc, std::string ethnicity, Vote vote);
+
+	friend class VoteCollector;
 };
 
 #endif
