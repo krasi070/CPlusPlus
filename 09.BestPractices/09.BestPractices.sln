@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.Container", "01.Container\01.Container.vcxproj", "{145BD391-98A4-4969-993C-CA7B6B3CD9CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.LambdaExpressions", "02.LambdaExpressions\02.LambdaExpressions.vcxproj", "{3D407872-5400-4A08-9460-A8A3D95C5C6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145BD391-98A4-4969-993C-CA7B6B3CD9CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{145BD391-98A4-4969-993C-CA7B6B3CD9CE}.Debug|Win32.Build.0 = Debug|Win32
+		{145BD391-98A4-4969-993C-CA7B6B3CD9CE}.Release|Win32.ActiveCfg = Release|Win32
+		{145BD391-98A4-4969-993C-CA7B6B3CD9CE}.Release|Win32.Build.0 = Release|Win32
+		{3D407872-5400-4A08-9460-A8A3D95C5C6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3D407872-5400-4A08-9460-A8A3D95C5C6E}.Debug|Win32.Build.0 = Debug|Win32
+		{3D407872-5400-4A08-9460-A8A3D95C5C6E}.Release|Win32.ActiveCfg = Release|Win32
+		{3D407872-5400-4A08-9460-A8A3D95C5C6E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
