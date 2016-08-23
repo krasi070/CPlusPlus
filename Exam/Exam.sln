@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.ReoccurringNumber", "01.ReoccurringNumber\01.ReoccurringNumber.vcxproj", "{AB2CCFFF-80CF-4BB1-B185-F1E2A678F4A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.QuadraticEquation", "02.QuadraticEquation\02.QuadraticEquation.vcxproj", "{36CA48BF-B664-4ADB-8C13-99D144DB2B5D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.SummerInAugust", "03.SummerInAugust\03.SummerInAugust.vcxproj", "{C7801B77-2364-42A2-BD63-AF3D6E610C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB2CCFFF-80CF-4BB1-B185-F1E2A678F4A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB2CCFFF-80CF-4BB1-B185-F1E2A678F4A4}.Debug|Win32.Build.0 = Debug|Win32
+		{AB2CCFFF-80CF-4BB1-B185-F1E2A678F4A4}.Release|Win32.ActiveCfg = Release|Win32
+		{AB2CCFFF-80CF-4BB1-B185-F1E2A678F4A4}.Release|Win32.Build.0 = Release|Win32
+		{36CA48BF-B664-4ADB-8C13-99D144DB2B5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36CA48BF-B664-4ADB-8C13-99D144DB2B5D}.Debug|Win32.Build.0 = Debug|Win32
+		{36CA48BF-B664-4ADB-8C13-99D144DB2B5D}.Release|Win32.ActiveCfg = Release|Win32
+		{36CA48BF-B664-4ADB-8C13-99D144DB2B5D}.Release|Win32.Build.0 = Release|Win32
+		{C7801B77-2364-42A2-BD63-AF3D6E610C4E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7801B77-2364-42A2-BD63-AF3D6E610C4E}.Debug|Win32.Build.0 = Debug|Win32
+		{C7801B77-2364-42A2-BD63-AF3D6E610C4E}.Release|Win32.ActiveCfg = Release|Win32
+		{C7801B77-2364-42A2-BD63-AF3D6E610C4E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

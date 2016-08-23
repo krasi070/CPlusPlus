@@ -1,0 +1,20 @@
+﻿Build started 21.08.2016 г. 14:51:51.
+     1>Project "D:\SoftUni\00.Open Courses\C++\Exam\03.SummerInAugust\03.SummerInAugust.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Country.cpp Main.cpp
+         Country.cpp
+     1>d:\softuni\00.open courses\c++\exam\03.summerinaugust\country.cpp(91): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         Main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SoftUni\00.Open Courses\C++\Exam\Debug\03.SummerInAugust.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\SoftUni\00.Open Courses\C++\Exam\Debug\03.SummerInAugust.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SoftUni\00.Open Courses\C++\Exam\Debug\03.SummerInAugust.lib" /MACHINE:X86 Debug\Country.obj
+         Debug\HolidaySpot.obj
+         Debug\Main.obj
+         03.SummerInAugust.vcxproj -> D:\SoftUni\00.Open Courses\C++\Exam\Debug\03.SummerInAugust.exe
+     1>Done Building Project "D:\SoftUni\00.Open Courses\C++\Exam\03.SummerInAugust\03.SummerInAugust.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.87
