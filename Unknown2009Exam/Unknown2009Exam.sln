@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.StringReplace", "01.StringReplace\01.StringReplace.vcxproj", "{40EAAACB-91F2-469A-A59E-2A8DA3FA8C04}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.ReverseWords", "02.ReverseWords\02.ReverseWords.vcxproj", "{6A2064E5-0F7C-46D1-B584-8787F6CA153D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.RecursiveFigure", "03.RecursiveFigure\03.RecursiveFigure.vcxproj", "{F6D0DFA2-105C-4C21-B420-01D2A31584A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.Permutations", "04.Permutations\04.Permutations.vcxproj", "{647CBC6F-B41E-4F84-BE8F-F4B66B396C63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40EAAACB-91F2-469A-A59E-2A8DA3FA8C04}.Debug|Win32.ActiveCfg = Debug|Win32
+		{40EAAACB-91F2-469A-A59E-2A8DA3FA8C04}.Debug|Win32.Build.0 = Debug|Win32
+		{40EAAACB-91F2-469A-A59E-2A8DA3FA8C04}.Release|Win32.ActiveCfg = Release|Win32
+		{40EAAACB-91F2-469A-A59E-2A8DA3FA8C04}.Release|Win32.Build.0 = Release|Win32
+		{6A2064E5-0F7C-46D1-B584-8787F6CA153D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6A2064E5-0F7C-46D1-B584-8787F6CA153D}.Debug|Win32.Build.0 = Debug|Win32
+		{6A2064E5-0F7C-46D1-B584-8787F6CA153D}.Release|Win32.ActiveCfg = Release|Win32
+		{6A2064E5-0F7C-46D1-B584-8787F6CA153D}.Release|Win32.Build.0 = Release|Win32
+		{F6D0DFA2-105C-4C21-B420-01D2A31584A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6D0DFA2-105C-4C21-B420-01D2A31584A4}.Debug|Win32.Build.0 = Debug|Win32
+		{F6D0DFA2-105C-4C21-B420-01D2A31584A4}.Release|Win32.ActiveCfg = Release|Win32
+		{F6D0DFA2-105C-4C21-B420-01D2A31584A4}.Release|Win32.Build.0 = Release|Win32
+		{647CBC6F-B41E-4F84-BE8F-F4B66B396C63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{647CBC6F-B41E-4F84-BE8F-F4B66B396C63}.Debug|Win32.Build.0 = Debug|Win32
+		{647CBC6F-B41E-4F84-BE8F-F4B66B396C63}.Release|Win32.ActiveCfg = Release|Win32
+		{647CBC6F-B41E-4F84-BE8F-F4B66B396C63}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
